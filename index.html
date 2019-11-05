@@ -209,7 +209,12 @@
                       <div class="col-md-10 col-md-offset-1 probootstrap-animate" data-animate-effect="fadeIn">
                         <h2>Acesso antecipado</h2>
                         <p>Preencha as informações e receba acesso antecipado ao Majoris.</p>
-                        <form style="margin-top: 40px;" action="https://j1baacqow0.execute-api.us-east-1.amazonaws.com/default/majoris-website-contact" method="post" class="probootstrap-form">
+                        <form
+                          id='requestTrialForm'
+                          style='margin-top: 40px;'
+                          action='https://ofx09pzmee.execute-api.us-east-1.amazonaws.com/default/majoris-website-contact'
+                          class='probootstrap-form'
+                        >
                           <div class="form-group">
                             <label for="name">Nome</label>
                             <input type="text" class="form-control" id="name" name="name" required>
@@ -233,7 +238,6 @@
                           </div>
                         </form>
                       </div>
-
                   </div>
             </div>
           </div>
@@ -246,6 +250,6 @@
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <script src="js/scripts.min.js"></script>
-    <script src="js/custom.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
