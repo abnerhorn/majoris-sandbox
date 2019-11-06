@@ -165,14 +165,14 @@
     var form = $(this);
     var url = form.attr('action');
 
-    $.ajax({
-      type: 'POST',
-      url: url,
-      data: JSON.stringify(getFormData(form)),
-      dataType: 'json',
-      success: function(data) {
-        alert(data);
-      }
-    });
+    // $.ajax({
+      // type: 'POST',
+      // url: url,
+      // data: JSON.stringify(getFormData(form)),
+      // dataType: 'json',
+      // success: function(data) {
+        // $('#loginModal').modal('hide');
+      // }
+    // });
   });
 })();

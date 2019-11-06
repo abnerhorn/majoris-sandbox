@@ -14,7 +14,7 @@
     <meta name="keywords" content="analytics, dados, estatísticas, dashboard, produção, iot, industria 4.0">
     <link rel="icon" href="img/favicon.png" type="image/png">
 
-    
+
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
     <link rel="stylesheet" href="css/styles-merged.css">
@@ -37,20 +37,24 @@
           </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center probootstrap-animate  option">
-                <form  action="https://j1baacqow0.execute-api.us-east-1.amazonaws.com/default/majoris-website-contact" method="post" class="probootstrap-form">
-                  <div class="form-group">
-                    <label for="name">Conte mais sobre a sua necessidade</label>
-                    <textarea cols="30" rows="10" class="form-control" style="height: 40px;" id="message" name="message"></textarea>
-                  </div>
-                  <br>
-                  <div class="form-group">
-                    <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Acessar o site" onclick="ga('send','event','enviar-other','select','other');">
-                  </div>
-                </form>
-            </div>
+          <div class="col-md-6 col-md-offset-3 text-center probootstrap-animate  option">
+            <form
+              id='requestTrialForm'
+              style='margin-top: 40px;'
+              action='https://ofx09pzmee.execute-api.us-east-1.amazonaws.com/default/majoris-website-contact'
+              class='probootstrap-form'
+            >
+              <div class="form-group">
+                <label for="name">Conte mais sobre a sua necessidade</label>
+                <textarea cols="30" rows="10" class="form-control" style="height: 40px;" id="message" name="message"></textarea>
+              </div>
+              <br>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Acessar o site" onclick="ga('send','event','enviar-other','select','other');">
+              </div>
+            </form>
+          </div>
         </div>
-       
       <img class="logo-form probootstrap-animate" src="https://i.imgur.com/oF6IvpK.png">
     </section>
 
@@ -58,6 +62,6 @@
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <script src="js/scripts.min.js"></script>
-    <script src="js/custom.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
