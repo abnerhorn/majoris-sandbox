@@ -171,7 +171,24 @@
       data: JSON.stringify(getFormData(form)),
       dataType: 'json',
       success: function(data) {
-        alert(data);
+        window.location.href = 'success.html';
+      }
+    });
+  });
+
+  $('#otherTrialForm').submit(function(e) {
+    e.preventDefault();
+
+    var form = $(this);
+    var url = form.attr('action');
+
+    $.ajax({
+      type: 'POST',
+      url: url,
+      data: JSON.stringify(getFormData(form)),
+      dataType: 'json',
+      success: function(data) {
+        window.location.href = 'others/index.html';
       }
     });
   });
