@@ -274,37 +274,41 @@
             <div class="modal-content">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cross"></i></button>
               <div class="probootstrap-modal-flex">
-                  <div class="container">
-                      <div class="row" style="padding-top: 30px;">
-                        <div class="col-md-10 col-md-offset-1 probootstrap-animate" data-animate-effect="fadeIn">
-                          <h2>Testar grátis</h2>
-                          <p>Preencha as informações e receba acesso a 15 dias para testar o Majoris de forma totalmente gratuita.</p>
-                          <form style="margin-top: 40px;" action="https://j1baacqow0.execute-api.us-east-1.amazonaws.com/default/majoris-website-contact" method="post" class="probootstrap-form">
-                            <div class="form-group">
-                              <label for="name">Nome</label>
-                              <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                              <label for="email">Email</label>
-                              <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Telefone</label>
-                                <input type="text" class="form-control" id="phone" name="phone" required>
-                              </div>
-                            <div class="form-group">
-                              <label for="company">Empresa</label>
-                              <input type="text" class="form-control" id="company" name="company">
-                            </div>
-                            <input type="hidden" name="source" value="estoque">
-                            <br>
-                            <div class="form-group">
-                              <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Receber acesso" onclick="ga('send','event','request-trial','modal','/estoque');">
-                            </div>
-                          </form>
+                <div class="container">
+                  <div class="row" style="padding-top: 30px;">
+                    <div class="col-md-10 col-md-offset-1 probootstrap-animate" data-animate-effect="fadeIn">
+                      <h2>Testar grátis</h2>
+                      <p>Preencha as informações e receba acesso a 15 dias para testar o Majoris de forma totalmente gratuita.</p>
+                      <form
+                        id='requestTrialForm'
+                        style='margin-top: 40px;'
+                        action='https://ofx09pzmee.execute-api.us-east-1.amazonaws.com/default/majoris-website-contact'
+                        class='probootstrap-form'
+                      >
+                        <div class="form-group">
+                          <label for="name">Nome</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
                         </div>
-
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="phone">Telefone</label>
+                          <input type="text" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="company">Empresa</label>
+                          <input type="text" class="form-control" id="company" name="company">
+                        </div>
+                        <input type="hidden" name="source" value="estoque">
+                        <br>
+                        <div class="form-group">
+                          <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Receber acesso" onclick="ga('send','event','request-trial','modal','/estoque');">
+                        </div>
+                      </form>
                     </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -316,6 +320,6 @@
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <script src="../js/scripts.min.js"></script>
-    <script src="../js/custom.min.js"></script>
+    <script src="../js/custom.js"></script>
   </body>
 </html>
